@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyperwave Social — Websites for Local Businesses | GTA</title>
+<meta name="description" content="Hyperwave Social builds modern websites for GTA local businesses that turn Google searches into calls and booked jobs. See a free draft of your new site before you pay anything.">
+<link rel="icon" type="image/png" href="logo-mark.png">
+<style>
+  :root{
+    --bg:#070d1a; --bg2:#0b1526; --card:#0e1c33; --line:#1d3355;
+    --ink:#eaf2fb; --muted:#9db4cc; --wave:#22d3ee; --wave2:#818cf8; --accent:#f59e0b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:var(--wave)}
+  header{position:sticky;top:0;background:rgba(7,13,26,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 22px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+  .logo{font-weight:800;font-size:1.2rem;letter-spacing:.3px}
+  .logo span{background:linear-gradient(90deg,var(--wave),var(--wave2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nav-cta{background:linear-gradient(90deg,var(--wave),var(--wave2));color:#06121f;font-weight:800;padding:9px 18px;border-radius:999px;text-decoration:none}
+  .hero{padding:84px 22px 70px;text-align:center;background:radial-gradient(900px 480px at 50% -80px,rgba(34,211,238,.22),transparent 60%),radial-gradient(700px 420px at 85% 0,rgba(129,140,248,.18),transparent 60%),var(--bg)}
+  .hero h1{font-size:2.7rem;line-height:1.15;max-width:820px;margin:0 auto 16px;font-weight:900}
+  .hero h1 .grad{background:linear-gradient(90deg,var(--wave),var(--wave2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:1.15rem;max-width:640px;margin:0 auto 28px}
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn-main{background:linear-gradient(90deg,var(--wave),var(--wave2));color:#06121f;font-weight:800;padding:15px 30px;border-radius:12px;text-decoration:none;font-size:1.05rem}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink);font-weight:700;padding:15px 30px;border-radius:12px;text-decoration:none;background:var(--bg2)}
+  .proof{margin-top:26px;color:var(--muted);font-size:.95rem}
+  section{max-width:1020px;margin:0 auto;padding:58px 22px}
+  h2{font-size:1.9rem;margin-bottom:8px;font-weight:850}
+  .sub{color:var(--muted);margin-bottom:28px;max-width:640px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card h3{margin-bottom:8px;font-size:1.12rem}
+  .card p{color:var(--muted);font-size:.97rem}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;counter-reset:step}
+  .step{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .step .num{font-size:2rem;font-weight:900;background:linear-gradient(90deg,var(--wave),var(--wave2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  .price{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px}
+  .price.hot{border-color:var(--wave);box-shadow:0 0 0 1px var(--wave),0 18px 50px rgba(34,211,238,.12)}
+  .price .tag{display:inline-block;background:rgba(34,211,238,.15);color:var(--wave);font-weight:700;font-size:.8rem;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+  .price .amount{font-size:2.3rem;font-weight:900}
+  .price .per{color:var(--muted)}
+  .price ul{margin:16px 0 22px 18px;color:var(--muted)}
+  .price li{margin:6px 0}
+  .price a{display:block;text-align:center;background:linear-gradient(90deg,var(--wave),var(--wave2));color:#06121f;font-weight:800;padding:14px;border-radius:10px;text-decoration:none}
+  .faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+  .faq summary{font-weight:700;cursor:pointer}
+  .faq p{color:var(--muted);margin-top:8px}
+  .cta-band{background:linear-gradient(120deg,rgba(34,211,238,.16),rgba(129,140,248,.16));border:1px solid var(--line);border-radius:20px;padding:38px;text-align:center}
+  footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;padding:30px 22px;font-size:.92rem}
+  @media(max-width:640px){.hero h1{font-size:2rem}.hero{padding:56px 18px 48px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><img src="logo-mark.png" alt="Hyperwave Social logo" style="height:34px;width:34px;border-radius:8px;vertical-align:-9px;margin-right:9px">Hyperwave <span>Social</span></div>
+  <a class="nav-cta" href="#pricing">Get my free draft</a>
+</header>
+
+<div class="hero">
+  <h1>Your customers Google you first.<br><span class="grad">What do they find?</span></h1>
+  <p>We build modern websites for GTA local businesses that turn Google searches into calls and booked jobs — and we build a free draft of yours before you pay a cent.</p>
+  <div class="cta-row">
+    <a class="btn-main" href="#pricing">See pricing — from $149/mo</a>
+    <a class="btn-ghost" href="#work">See sample work</a>
+  </div>
+  <div class="proof">No upfront risk · Live within a week · You own your domain · We handle everything</div>
+</div>
+
+<section id="services">
+  <h2>What we build</h2>
+  <p class="sub">Not just a website — the whole "found on Google and easy to book" package.</p>
+  <div class="grid">
+    <div class="card"><h3>📱 Mobile-first website</h3><p>Fast, modern, built for phones first — because that's where your customers are searching. Services, photos of your work, reviews, and your service area, all one tap from a call.</p></div>
+    <div class="card"><h3>📞 Built to get the call</h3><p>Tap-to-call buttons and a quote-request form on every page. No dead ends, no "website coming soon", no 404s on your Google profile.</p></div>
+    <div class="card"><h3>📍 Google profile cleanup</h3><p>We fix your Google Business Profile — website link, categories, hours, photos — so the customers who already found you can actually reach you.</p></div>
+    <div class="card"><h3>⭐ Review engine</h3><p>A simple review link for happy customers, set up so your best work turns into the 5-star proof the next customer sees.</p></div>
+    <div class="card"><h3>🛠️ Managed for you</h3><p>Hosting, security, updates and small edits are all handled. You run your business; we run the website. Two small content edits a month are included.</p></div>
+    <div class="card"><h3>🔍 Local SEO basics</h3><p>Proper page titles, service pages for the towns you serve, and Google-ready structure — the foundations that help you show up in "near me" searches.</p></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>How it works</h2>
+  <p class="sub">Three steps, about a week, zero homework for you.</p>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>See your free draft</h3><p>We build a real draft of your new site — your name, services, reviews — and send you the link. Like it or don't, the draft is free.</p></div>
+    <div class="step"><div class="num">02</div><h3>Pick a plan, go live</h3><p>Choose the plan that fits, pay securely by card, and we put the site live on your own domain, connected to your Google profile.</p></div>
+    <div class="step"><div class="num">03</div><h3>Get found, get booked</h3><p>We manage the site month to month — updates, edits, hosting — while you take the calls it brings in.</p></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Sample work</h2>
+  <p class="sub">Recent draft concepts built for GTA businesses like yours. Every client starts with a free draft in this style.</p>
+  <div class="grid">
+    <div class="card"><h3>🔧 Plumbing — draft concept</h3><p>Emergency-first layout: call button always on screen, services priced for trust, reviews up front.</p></div>
+    <div class="card"><h3>❄️ HVAC — draft concept</h3><p>Seasonal service grid, quote form on every page, Google profile rebuilt so the website link actually works.</p></div>
+    <div class="card"><h3>🧼 Cleaning — draft concept</h3><p>Booking-friendly design with real packages and simple pricing — replacing a site that sent customers to a dead page.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Simple pricing</h2>
+  <p class="sub">One booked job a month covers either plan for most trades. No surprises, ever.</p>
+  <div class="price-grid">
+    <div class="price hot">
+      <div class="tag">EASIEST START</div>
+      <div class="amount">$149<span class="per">/month</span></div>
+      <p class="per">No setup fee · 12-month minimum</p>
+      <ul>
+        <li>Everything in "What we build"</li>
+        <li>Hosting & management included</li>
+        <li>2 small edits per month</li>
+        <li>Your own domain, connected for you</li>
+      </ul>
+      <!-- STRIPE_LINK_MONTHLY -->
+      <a href="mailto:hyperwavesocial@gmail.com?subject=Start%20my%20site%20—%20%24149%2Fmo%20plan">Start with $149/mo</a>
+    </div>
+    <div class="price">
+      <div class="tag">LOWEST MONTHLY</div>
+      <div class="amount">$799 <span class="per">+ $79/month</span></div>
+      <p class="per">One-time setup · 12-month care plan</p>
+      <ul>
+        <li>Everything in "What we build"</li>
+        <li>Hosting & management included</li>
+        <li>2 small edits per month</li>
+        <li>Your own domain, connected for you</li>
+      </ul>
+      <!-- STRIPE_LINK_SETUP -->
+      <a href="mailto:hyperwavesocial@gmail.com?subject=Start%20my%20site%20—%20%24799%20%2B%20%2479%2Fmo%20plan">Start with $799 + $79/mo</a>
+    </div>
+  </div>
+  <p class="sub" style="margin-top:16px">You always own your domain and your content. At the end of your term, the site is yours — take it anywhere.</p>
+</section>
+
+<section class="faq">
+  <h2>Questions</h2>
+  <details><summary>How fast is my site live?</summary><p>Most sites go live within a week of you approving the free draft and choosing a plan.</p></details>
+  <details><summary>Do I own my website?</summary><p>Yes — your domain is registered to you, and your content is yours. We're the managers, not the owners.</p></details>
+  <details><summary>What if I already have a website?</summary><p>Even better — we rebuild it modern and mobile-first, keep what works, and redirect your old pages so nothing breaks.</p></details>
+  <details><summary>What counts as a "small edit"?</summary><p>Text changes, new photos, updated hours or prices, adding a service — the everyday stuff. Bigger changes are quoted up front, never billed by surprise.</p></details>
+  <details><summary>How do I pay?</summary><p>Securely by card through Stripe. The monthly plan runs automatically, so you never chase an invoice.</p></details>
+</section>
+
+<section>
+  <div class="cta-band">
+    <h2>See your business the way Google sees it — fixed.</h2>
+    <p class="sub" style="margin:10px auto 22px">Message us and we'll build a free draft of your new website. No pitch deck, no obligation.</p>
+    <div class="cta-row">
+      <a class="btn-main" href="mailto:hyperwavesocial@gmail.com?subject=Free%20draft%20of%20my%20new%20website">Email us for a free draft</a>
+      <a class="btn-ghost" href="https://www.instagram.com/hyperwave_social/">DM "SITE" on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Hyperwave Social · GTA, Ontario · <a href="mailto:hyperwavesocial@gmail.com">hyperwavesocial@gmail.com</a> · Instagram <a href="https://www.instagram.com/hyperwave_social/">@hyperwave_social</a>
+</footer>
+</body>
+</html>
